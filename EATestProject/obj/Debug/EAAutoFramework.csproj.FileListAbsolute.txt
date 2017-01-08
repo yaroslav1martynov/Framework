@@ -1,0 +1,15 @@
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\EAAutoFramework.dll
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\EAAutoFramework.pdb
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\ThoughtWorks.Selenium.Core.dll
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\WebDriver.dll
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\WebDriver.Support.dll
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\Selenium.WebDriverBackedSelenium.pdb
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\ThoughtWorks.Selenium.Core.pdb
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\ThoughtWorks.Selenium.Core.xml
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\WebDriver.xml
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\WebDriver.Support.xml
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\obj\Debug\EAAutoFramework.csprojResolveAssemblyReference.cache
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\obj\Debug\EAAutoFramework.dll
+D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\obj\Debug\EAAutoFramework.pdb
