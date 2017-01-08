@@ -9,18 +9,18 @@ namespace EAAutoFramework.Base
 {
     public static class DriverContext
     {
-        private static IWebDriver _driver;
+        private static IWebDriver  driver;
 
 
        public  static IWebDriver Driver
         {
             get
             {
-                return _driver;
+                return driver;
             }
             set
             {
-                _driver = value;
+                driver = value;
             }
         }
     }

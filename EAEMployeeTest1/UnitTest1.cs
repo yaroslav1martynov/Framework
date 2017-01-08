@@ -4,6 +4,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using EAEMployeeTest1.Pages;
 using EAAutoFramework.Base;
+using System.Threading;
 
 namespace EAEMployeeTest1
 {
@@ -17,6 +18,9 @@ namespace EAEMployeeTest1
         public void TestMethod1()
         {
             DriverContext.Driver = new FirefoxDriver();
+
+            driver
+
             DriverContext.Driver.Navigate().GoToUrl(url);
 
             LoginPage page = new LoginPage();
@@ -24,7 +28,9 @@ namespace EAEMployeeTest1
             page.ClickLoginLink();
             page.Login("pliushkin2197@mail.ru", "ghjuhfvbcn");
 
+            Thread.Sleep(2000);
             Courses courses = page.ClickCourses();
+            Thread.Sleep(2000);
             courses.ClickProdoljyt();
           
          
