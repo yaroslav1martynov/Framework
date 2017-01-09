@@ -11,26 +11,16 @@ namespace EAEMployeeTest1.Pages
 {
     class Courses: BasePage
     {
-
         //  [FindsBy(How = How.CssSelector, Using = "button.button--full-width")]
         // public IWebElement lnkMoreImpresshons { get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "a.button.button--green.button--split-effect")]
         public IWebElement prodolgit { get; set; }
-
-        //[FindsBy(How = How.CssSelector, Using = "ul.main-nav__list:nth-child(1) > li:nth-child(1) > a")]
-        //public IWebElement lnkCuorse { get; set; }
-
        
         public Prodoljit ClickProdoljyt()
         {
             prodolgit.Click();
             return new Prodoljit();
-        }
-
-
-
-
-       
+        }      
     }
 }

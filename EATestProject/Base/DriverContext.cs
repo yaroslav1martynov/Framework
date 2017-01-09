@@ -14,6 +14,8 @@ namespace EAAutoFramework.Base
 
        public  static IWebDriver Driver
         {
+         
+
             get
             {
                 return driver;
@@ -23,5 +25,8 @@ namespace EAAutoFramework.Base
                 driver = value;
             }
         }
+
+        public static Browser Browser{ get; set; }
     }
+
 }

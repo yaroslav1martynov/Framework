@@ -7,32 +7,21 @@ namespace EAEMployeeTest1.Pages
 {
     class LoginPage : BasePage
     {
-
         [FindsBy(How = How.LinkText, Using = "Войти")]
         public IWebElement lnkLogin { get; set; }
 
-
-
         //клик Курсы
         [FindsBy(How = How.CssSelector, Using = "ul.main-nav__list:nth-child(1) > li:nth-child(1) > a")]
-        public IWebElement lnkCuorse { get; set; }
-
-       // [FindsBy(How = How.CssSelector, Using = "a.button.button--green.button--split-effect")]
-       // public IWebElement prodolgit { get; set; }
-
-
-
-
+        IWebElement lnkCuorse { get; set; }
 
         [FindsBy(How = How.Id, Using = "login-email")]
-        public IWebElement txtUserName { get; set; }
+        IWebElement txtUserName { get; set; }
 
         [FindsBy(How = How.Id, Using = "login-password")]
-        public IWebElement txtPassword{ get; set; }
+        IWebElement txtPassword{ get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "input.button--full-width")]
-        public IWebElement btnLogin { get; set; }
-
+        IWebElement btnLogin { get; set; }
 
 
         public void Login(string userName, string password)
@@ -50,17 +39,8 @@ namespace EAEMployeeTest1.Pages
         public Courses ClickCourses()
         {
             lnkCuorse.Click();
-            return new Courses();
+            return GetInstance<Courses>();
+            // return new Courses();
         }
-
-       /* public Courses Cliclprodolgit()
-        {
-            prodolgit.Click();
-            return new Courses();
-        }*/
-
-
-
-
     }
 }
