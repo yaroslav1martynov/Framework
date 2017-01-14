@@ -7,6 +7,7 @@ using EAAutoFramework.Base;
 using System.Threading;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
+using EAAutoFramework.Helpers;
 
 namespace EAEMployeeTest1
 {
@@ -15,7 +16,7 @@ namespace EAEMployeeTest1
     {
         string url = "https://htmlacademy.ru/";
 
-        public void OpenBrowser(BrowserType browserType = BrowserType.FireFox)
+        public void OpenBrowser(BrowserType browserType) //= BrowserType.FireFox)
         {
             switch (browserType)
             {
@@ -46,13 +47,21 @@ namespace EAEMployeeTest1
             //  DriverContext.Driver = new FirefoxDriver();        
             // DriverContext.Driver.Navigate().GoToUrl(url);
 
+            string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Login.xlsx";
+            ExcelHelpers.PopulateInCollection(fileName);
+
+
+            LogHelpers.CreateLogFile();
             OpenBrowser(BrowserType.FireFox);
+            LogHelpers.Write("Open the browser !!!");
+       
             DriverContext.Browser.GoToUrl(url);
+            LogHelpers.Write("Navigated to the page");
 
 
             CurrentPage = GetInstance<LoginPage>();
             CurrentPage.AS<LoginPage>().ClickLoginLink();
-            CurrentPage.AS<LoginPage>().Login("pliushkin2197@mail.ru", "ghjuhfvbcn");
+            CurrentPage.AS<LoginPage>().Login(ExcelHelpers.ReadData(1, "UserName"), ExcelHelpers.ReadData(1, "Password"));
             Thread.Sleep(3000);
             CurrentPage = CurrentPage.AS<LoginPage>().ClickCourses();
             Thread.Sleep(3000);

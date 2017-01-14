@@ -24,6 +24,8 @@ D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\Selenium.WebDrive
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\ThoughtWorks.Selenium.Core.dll
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\WebDriver.dll
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\WebDriver.Support.dll
+D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\Excel.dll
+D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\ICSharpCode.SharpZipLib.dll
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\EAAutoFramework.pdb
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\Selenium.WebDriverBackedSelenium.pdb
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\Selenium.WebDriverBackedSelenium.xml
@@ -31,6 +33,8 @@ D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\ThoughtWorks.Sele
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\ThoughtWorks.Selenium.Core.xml
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\WebDriver.xml
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\WebDriver.Support.xml
+D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\Excel.pdb
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\obj\Debug\EAEMployeeTest1.csprojResolveAssemblyReference.cache
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\obj\Debug\EAEMployeeTest1.dll
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\obj\Debug\EAEMployeeTest1.pdb
+D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\Data\Login.xlsx

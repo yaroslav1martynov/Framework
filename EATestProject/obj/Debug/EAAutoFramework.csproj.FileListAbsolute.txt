@@ -15,10 +15,13 @@ D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\obj\Debug\EAAutoFramework
 D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\obj\Debug\EAAutoFramework.pdb
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\EAAutoFramework.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\EAAutoFramework.pdb
+D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\Excel.dll
+D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\ICSharpCode.SharpZipLib.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\Selenium.WebDriverBackedSelenium.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\ThoughtWorks.Selenium.Core.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\WebDriver.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\WebDriver.Support.dll
+D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\Excel.pdb
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\Selenium.WebDriverBackedSelenium.pdb
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\Selenium.WebDriverBackedSelenium.xml
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\ThoughtWorks.Selenium.Core.pdb

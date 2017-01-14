@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Excel, Version=2.1.2.3, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.2.1.2.3\lib\net45\Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Selenium.WebDriverBackedSelenium">
       <HintPath>..\..\..\selenium-dotnet-3.0.0\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
     </Reference>
@@ -66,9 +74,9 @@
     <Compile Include="Extansions\WebDriverExtansions.cs" />
     <Compile Include="Extansions\WebElementExtensions.cs" />
     <Compile Include="Helpers\DataHelperExtensions.cs" />
-    <Compile Include="Helpers\ExcelHelperExtensions.cs" />
+    <Compile Include="Helpers\ExcelHelpers.cs" />
     <Compile Include="Helpers\HtmlTableHelper.cs" />
-    <Compile Include="Helpers\LoginHelpers.cs" />
+    <Compile Include="Helpers\LogHelpers.cs" />
     <Compile Include="Helpers\ReportungHelpers.cs" />
     <Compile Include="Helpers\WebServiceHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
