@@ -8,6 +8,9 @@ using System.Threading;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
 using EAAutoFramework.Helpers;
+using OpenQA.Selenium.Support.UI;
+
+
 
 namespace EAEMployeeTest1
 {
@@ -16,6 +19,8 @@ namespace EAEMployeeTest1
     {
         string url = "https://htmlacademy.ru/";
 
+        public object TimeUnit { get; private set; }
+
         public void OpenBrowser(BrowserType browserType) //= BrowserType.FireFox)
         {
             switch (browserType)
@@ -23,10 +28,14 @@ namespace EAEMployeeTest1
                 case BrowserType.InternetExplorer:
                     DriverContext.Driver = new InternetExplorerDriver();
                     DriverContext.Browser = new Browser(DriverContext.Driver);
+                 
                     break;
                 case BrowserType.FireFox:
                     DriverContext.Driver = new FirefoxDriver();
+                    DriverContext.Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
                     DriverContext.Browser = new Browser(DriverContext.Driver);
+                    
+
                     break;
                 case BrowserType.Chrome:
                     DriverContext.Driver = new ChromeDriver();
@@ -39,7 +48,12 @@ namespace EAEMployeeTest1
             }
         }
 
-       // public object TimeUnit { get; private set; }
+        private IWebDriver IWebDriver_driver(ITimeouts timeouts)
+        {
+            throw new NotImplementedException();
+        }
+
+        // public object TimeUnit { get; private set; }
 
         [TestMethod]
         public void TestMethod1()
@@ -62,10 +76,12 @@ namespace EAEMployeeTest1
             CurrentPage = GetInstance<LoginPage>();
             CurrentPage.AS<LoginPage>().ClickLoginLink();
             CurrentPage.AS<LoginPage>().Login(ExcelHelpers.ReadData(1, "UserName"), ExcelHelpers.ReadData(1, "Password"));
-            Thread.Sleep(3000);
+
             CurrentPage = CurrentPage.AS<LoginPage>().ClickCourses();
-            Thread.Sleep(3000);
+            //Thread.Sleep(3000);
             CurrentPage.AS<Courses>().ClickProdoljyt();
+            //Thread.Sleep(3000);
+           // DriverContext.Driver.Quit();//my
 
         }
     }

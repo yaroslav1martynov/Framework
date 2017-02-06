@@ -22,6 +22,7 @@ namespace EAAutoFramework.Base
             }
             set
             {
+               
                 driver = value;
             }
         }

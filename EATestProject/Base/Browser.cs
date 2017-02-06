@@ -28,7 +28,7 @@ namespace EAAutoFramework.Base
     public enum BrowserType
     {
         InternetExplorer,
-        FireFox,
+        FireFox ,
         Chrome
     }
 }
