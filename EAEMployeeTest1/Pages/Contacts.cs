@@ -2,7 +2,7 @@
 
 namespace EAEMployeeTest1.Pages
 {
-    class Prodoljit : BasePage
+    class Contacts : BasePage
     {
     }
 }

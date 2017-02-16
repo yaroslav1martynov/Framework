@@ -67,8 +67,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Pages\Courses.cs" />
-    <Compile Include="Pages\Prodoljit.cs" />
+    <Compile Include="Pages\ForumPage.cs" />
+    <Compile Include="Pages\Contacts.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

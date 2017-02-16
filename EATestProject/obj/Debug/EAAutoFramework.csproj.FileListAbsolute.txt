@@ -22,6 +22,5 @@ D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\WebDriver.Support.d
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\Excel.pdb
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\WebDriver.xml
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\WebDriver.Support.xml
-D:\Avtomation\ПРОЭКТ\Framework\EATestProject\obj\Debug\EAAutoFramework.csprojResolveAssemblyReference.cache
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\obj\Debug\EAAutoFramework.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\obj\Debug\EAAutoFramework.pdb

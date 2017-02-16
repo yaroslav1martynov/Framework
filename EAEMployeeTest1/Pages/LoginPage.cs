@@ -7,20 +7,17 @@ namespace EAEMployeeTest1.Pages
 {
     class LoginPage : BasePage
     {
-        [FindsBy(How = How.LinkText, Using = "Войти")]
-        public IWebElement lnkLogin { get; set; }
 
-        //клик Курсы
-        [FindsBy(How = How.CssSelector, Using = "ul.main-nav__list:nth-child(1) > li:nth-child(1) > a")]
-        IWebElement lnkCuorse { get; set; }
+        [FindsBy(How = How.LinkText, Using = "Форум")]
+        IWebElement lnkForum { get; set; }
 
-        [FindsBy(How = How.Id, Using = "login-email")]
+        [FindsBy(How = How.Id, Using = "login")]
         IWebElement txtUserName { get; set; }
 
-        [FindsBy(How = How.Id, Using = "login-password")]
+        [FindsBy(How = How.Id, Using = "passw")]
         IWebElement txtPassword{ get; set; }
 
-        [FindsBy(How = How.CssSelector, Using = "input.button--full-width")]
+        [FindsBy(How = How.Id, Using = "submit_it")]
         IWebElement btnLogin { get; set; }
 
 
@@ -31,15 +28,15 @@ namespace EAEMployeeTest1.Pages
             btnLogin.Submit();
         }
 
-        public void ClickLoginLink()
+       /* public void ClickLoginLink()
         {
-            lnkLogin.Click();
-        }
+           // lnkLogin.Click();
+        }*/
 
-        public Courses ClickCourses()
+        public ForumPage ClickForum()
         {
-            lnkCuorse.Click();
-            return GetInstance<Courses>();
+            lnkForum.Click();
+            return GetInstance<ForumPage>();
             // return new Courses();
         }
     }

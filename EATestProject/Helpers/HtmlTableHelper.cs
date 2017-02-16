@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EAAutoFramework.Helpers
 {
-   /* class HtmlTableHelper
+   public class HtmlTableHelper
     {
         private static List<TableDatacollection> _tableDatacollections;
 
@@ -26,8 +27,9 @@ namespace EAAutoFramework.Helpers
             int rowIndex = 0;
             foreach (var row in rows)
             {
-                int colIndex = 0;
-                var colDatas = row.FindElement(By.TagName("td"));
+                int colIndex = 0;//7 
+
+                var colDatas = row.FindElements(By.TagName("td"));
                 //Store data only if it has value in row
                 if (colDatas.Count != 0)
                     foreach (var colValue in colDatas)
@@ -46,46 +48,96 @@ namespace EAAutoFramework.Helpers
                 rowIndex++;
             }
         }
-        private static ColumnSpecialValue GetControl (IWebElement columnValue)
+
+    private static ColumnSpecialValue GetControl(IWebElement columnValue)
+    {
+        ColumnSpecialValue columnSpecialValue = null;
+        //Check if the control has specfic tags like input/hyperlink etc
+        if (columnValue.FindElements(By.TagName("a")).Count > 0)
         {
-            ColumnSpecialValue columnSpecialValue = null;
-            //Check if the control has specfic tags like input/hyperlink etc
-            if (columnValue.FindElement(By.TagName("a")).Count > 0)
+            columnSpecialValue = new ColumnSpecialValue
             {
-                ColumnSpecialValue = new ColumnSpecialValue
-                {
-                    ElementCollection = columnValue.FindElement(By.TagName("a")),
-                    ControlType = "hyperLink"
-                };
-            }
-            if (columnValue.FindElement(By.TagName("input")).Count > 0)
-            {
-                columnValue = new ColumnSpecialValue
-                {
-                    ElementCollection = columnValue.FindElement(By.TagName("a")),
-                    ControlType = "input"
-                };
-            }
-            return ColumnSpecialValue;
+                ElementCollection = columnValue.FindElements(By.TagName("a")),
+                ControlType = "hyperLink"
+            };
         }
+        if (columnValue.FindElements(By.TagName("input")).Count > 0)
+        {
+            columnSpecialValue = new ColumnSpecialValue
+            {
+                ElementCollection = columnValue.FindElements(By.TagName("input")),
+                ControlType = "input"
+            };
+        }
+        return columnSpecialValue;
     }
+
+        public static void PerformActionOnCell(string columnIndex, string refColumnName, string refColumnValue, string controlToOperate = null)
+        {
+            foreach (int rowNumber in GetDynamicRowNumber(refColumnName, refColumnValue))
+            {
+                var cell = (from e in _tableDatacollections
+                            where e.ColumnName == columnIndex && e.RowNumber == rowNumber
+                            select e.ColumnSpecialValues).SingleOrDefault();
+                //Need to operate on those controls
+                if(controlToOperate != null && cell != null)
+                {
+                    //Since based on the control type, the retrivingg of text changes
+                    //created this kind of control
+                    if(cell.ControlType == "hyperLink")
+                    {
+                        var returnedControl = (from c in cell.ElementCollection
+                                               where c.Text == controlToOperate
+                                               select c).SingleOrDefault();
+                        //ToDo: Currenly only click is supported, future is not taken care hare
+                        returnedControl?.Click();
+                    }
+                    if(cell.ControlType == "input")
+                    {
+                        var returnedControl = (from c in cell.ElementCollection
+                                               where c.GetAttribute("value") == controlToOperate
+                                               select c).SingleOrDefault();
+                        //ToDo: Currenly only click is supported, future is not taken care hare
+                    }
+                }
+                else
+                {
+                    cell.ElementCollection?.First().Click();
+                }
+
+            }
+        }
+
+        private static IEnumerable GetDynamicRowNumber(string columnName, string columnValue)
+        {
+
+            //dinamic row
+            foreach (var table in _tableDatacollections)
+            {
+                if (table.ColumnName == columnName && table.ColumnValue == columnValue)
+                    yield return table.RowNumber;
+            }
+        }
+
+}
+
 
 
     public class TableDatacollection
-    {
-        public int RowNumber { get; set; }
+        {
+            public int RowNumber { get; set; }
 
-        public string ColumnName { get; set; }
+            public string ColumnName { get; set; }
 
-        public string ColumnValue { get; set; }
+            public string ColumnValue { get; set; }
 
-        public ColumnSpecialValue ColumnSpecialValues { get; set; }
-    }
+            public ColumnSpecialValue ColumnSpecialValues { get; set; }
+        }
 
-    public class ColumnSpecialValue
-    {
-    public IEnumerable<IWebElement> ElementCollection { get; set; }
+        public class ColumnSpecialValue
+        {
+            public IEnumerable<IWebElement> ElementCollection { get; set; }
 
-    public string ControlType { get; set; }
-    }*/
+            public string ControlType { get; set; }
+        }
 }
