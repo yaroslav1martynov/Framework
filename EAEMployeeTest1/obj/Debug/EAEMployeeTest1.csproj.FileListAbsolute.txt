@@ -32,3 +32,4 @@ D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\Excel.pdb
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\obj\Debug\EAEMployeeTest1.csprojResolveAssemblyReference.cache
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\obj\Debug\EAEMployeeTest1.dll
 D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\obj\Debug\EAEMployeeTest1.pdb
+D:\Avtomation\ПРОЭКТ\Framework\EAEMployeeTest1\bin\Debug\Config\GlobalConfig.xml

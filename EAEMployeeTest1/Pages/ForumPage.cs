@@ -15,8 +15,9 @@ namespace EAEMployeeTest1.Pages
         [FindsBy(How = How.LinkText, Using = "Контакты")]
         IWebElement lnkCreatecontacts { get; set; }
 
-        [FindsBy(How = How.ClassName, Using = "forum")]
+        [FindsBy(How = How.ClassName, Using = "forum")]//"forum"
         IWebElement tblForumList { get; set; }
+
 
         public Contacts ClickContacts()
         {
@@ -24,6 +25,7 @@ namespace EAEMployeeTest1.Pages
             return new Contacts();
         }     
         
+
         public IWebElement GetForumListtbl()
         {
             return tblForumList;
