@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
+using EAAutoFramework.Extansions;
 
 namespace EAEMployeeTest1.Pages
 {
@@ -28,16 +29,17 @@ namespace EAEMployeeTest1.Pages
             btnLogin.Submit();
         }
 
-       /* public void ClickLoginLink()
-        {
-           // lnkLogin.Click();
-        }*/
-
         public ForumPage ClickForum()
         {
+            DriverContext.Driver.WaitForPageLoaded();// доделать
             lnkForum.Click();
             return GetInstance<ForumPage>();
-            // return new Courses();
+        }
+
+        //метод проверки на сушествование 
+        internal void CheckIfLoginExist()
+        {
+            txtUserName.AssertElementPresent();
         }
     }
 }

@@ -30,5 +30,10 @@ namespace EAEMployeeTest1.Pages
         {
             return tblForumList;
         }
+
+        internal void CheckIfLoginExist()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

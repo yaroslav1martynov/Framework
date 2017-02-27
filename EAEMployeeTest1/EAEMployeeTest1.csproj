@@ -67,6 +67,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="HookInitialize.cs" />
     <Compile Include="Pages\ForumPage.cs" />
     <Compile Include="Pages\Contacts.cs" />
     <Compile Include="Pages\LoginPage.cs" />
