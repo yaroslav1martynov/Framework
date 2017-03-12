@@ -13,10 +13,13 @@ D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\bin\Debug\WebDriver.Suppo
 D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\obj\Debug\EAAutoFramework.csprojResolveAssemblyReference.cache
 D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\obj\Debug\EAAutoFramework.dll
 D:\Avtomation\ПРОЭКТ\EATestProject\EATestProject\obj\Debug\EAAutoFramework.pdb
+D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\Config\GlobalConfig.xml
+D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\EAAutoFramework.dll.config
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\EAAutoFramework.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\EAAutoFramework.pdb
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\Excel.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\TechTalk.SpecFlow.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\WebDriver.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\WebDriver.Support.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\Excel.pdb
@@ -24,5 +27,3 @@ D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\WebDriver.xml
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\WebDriver.Support.xml
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\obj\Debug\EAAutoFramework.dll
 D:\Avtomation\ПРОЭКТ\Framework\EATestProject\obj\Debug\EAAutoFramework.pdb
-D:\Avtomation\ПРОЭКТ\Framework\EATestProject\obj\Debug\EAAutoFramework.csprojResolveAssemblyReference.cache
-D:\Avtomation\ПРОЭКТ\Framework\EATestProject\bin\Debug\Config\GlobalConfig.xml

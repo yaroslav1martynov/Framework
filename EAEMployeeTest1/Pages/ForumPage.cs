@@ -22,7 +22,7 @@ namespace EAEMployeeTest1.Pages
         public Contacts ClickContacts()
         {
             lnkCreatecontacts.Click();
-            return new Contacts();
+            return GetInstance<Contacts>();
         }     
         
 
@@ -31,9 +31,9 @@ namespace EAEMployeeTest1.Pages
             return tblForumList;
         }
 
-        internal void CheckIfLoginExist()
+       /* internal void CheckIfLoginExist()
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 }

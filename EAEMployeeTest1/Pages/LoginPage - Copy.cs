@@ -6,11 +6,10 @@ using EAAutoFramework.Extansions;
 
 namespace EAEMployeeTest1.Pages
 {
-    class LoginPage : BasePage
+   class LoginPage : BasePage
     {
 
-        [FindsBy(How = How.LinkText, Using = "Форум")]
-        IWebElement lnkForum { get; set; }
+
 
         [FindsBy(How = How.Id, Using = "login")]
         IWebElement txtUserName { get; set; }
@@ -26,12 +25,17 @@ namespace EAEMployeeTest1.Pages
         {
             txtUserName.SendKeys(userName);
             txtPassword.SendKeys(password);
-            btnLogin.Submit();
         }
+
+        public HomePage ClickLoginButton()
+        {
+            btnLogin.Submit();
+            return GetInstance<HomePage>();
+        }
+
 
         public ForumPage ClickForum()
         {
-            DriverContext.Driver.WaitForPageLoaded();// доделать
             lnkForum.Click();
             return GetInstance<ForumPage>();
         }

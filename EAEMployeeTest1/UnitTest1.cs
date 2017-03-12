@@ -20,24 +20,20 @@ namespace EAEMployeeTest1
 
       
 
-        [TestMethod]
+       /* [TestMethod]
         public void TestMethod1()
         {
-
             string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Login.xlsx";
             ExcelHelpers.PopulateInCollection(fileName);
             //Login Page
-            CurrentPage = GetInstance<LoginPage>();
+            CurrentPage = GetInstance<HomePage>();
             //checking
-            CurrentPage.AS<LoginPage>().CheckIfLoginExist();
-            CurrentPage.AS<LoginPage>().Login(ExcelHelpers.ReadData(1, "UserName"), ExcelHelpers.ReadData(1, "Password"));
-           // Thread.Sleep(3000);
-            CurrentPage = CurrentPage.AS<LoginPage>().ClickForum();
-           // Thread.Sleep(3000);
+            CurrentPage.AS<HomePage>().Login(ExcelHelpers.ReadData(1, "UserName"), ExcelHelpers.ReadData(1, "Password"));
+          // Thread.Sleep(3000);
+            CurrentPage = CurrentPage.AS<FirstPageAfterRegistration>().ClickForum();
+            Thread.Sleep(3000);
             CurrentPage.AS<ForumPage>().ClickContacts();
             // DriverContext.Driver.Quit();//my
-
-
         }
 
 
@@ -47,13 +43,13 @@ namespace EAEMployeeTest1
             string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Login.xlsx";
             ExcelHelpers.PopulateInCollection(fileName);
 
-            CurrentPage = GetInstance<LoginPage>();
-            CurrentPage.AS<LoginPage>().Login(ExcelHelpers.ReadData(1, "UserName"), ExcelHelpers.ReadData(1, "Password"));
-            CurrentPage = CurrentPage.AS<LoginPage>().ClickForum();
+            CurrentPage = GetInstance<HomePage>();
+            CurrentPage.AS<HomePage>().Login(ExcelHelpers.ReadData(1, "UserName"), ExcelHelpers.ReadData(1, "Password"));
+            CurrentPage = CurrentPage.AS<FirstPageAfterRegistration>().ClickForum();
           
             var tabel = CurrentPage.AS<ForumPage>().GetForumListtbl();         
             HtmlTableHelper.ReadTable(tabel);      
             HtmlTableHelper.PerformActionOnCell("0", "Разделы", "Английский язык", "Английский язык");
-        }
+        }*/
     }
 }
